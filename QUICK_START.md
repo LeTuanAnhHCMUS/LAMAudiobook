@@ -31,7 +31,7 @@ Nếu mục tiêu của bạn là xem sản phẩm chạy được như một �
 
 1. Cài môi trường theo hướng dẫn ở mục 3.
 2. Khởi động backend và giao diện web theo hướng dẫn ở mục 4.
-3. Mở giao diện Streamlit tại `http://localhost:8501`.
+3. Mở giao diện Streamlit tại `http://localhost:`.
 4. Tải tệp sách lên và chờ hệ thống xử lý.
 5. Tải file âm thanh hoặc audiobook đầu ra khi hoàn tất.
 
@@ -71,14 +71,14 @@ Mục này phù hợp khi cần kiểm tra luồng xử lý mà không phụ thu
 
 ```powershell
 $env:TTS_ENGINE="mock"
-uvicorn src.backend.app:app --host 127.0.0.1 --port 8000
+uvicorn src.backend.app:app --host 127.0.0.x --port xxxx
 ```
 
 ### 4.2. Mở terminal 2: chạy giao diện
 
 ```powershell
-$env:API_BASE_URL="http://localhost:8000"
-streamlit run src/frontend/streamlit_app.py --server.port 8501
+$env:API_BASE_URL="http://localhost:xxxx"
+streamlit run src/frontend/streamlit_app.py --server.port xxxx
 ```
 
 ### 4.3. Sử dụng
@@ -86,7 +86,7 @@ streamlit run src/frontend/streamlit_app.py --server.port 8501
 Mở trình duyệt tại:
 
 ```text
-http://localhost:8501
+http://localhost:xxxx
 ```
 
 Sau đó:
@@ -201,8 +201,8 @@ Biến môi trường thường gặp:
 
 Sau khi khởi động hệ thống, có thể kiểm tra nhanh:
 
-- Backend sống tại: `http://localhost:8000/health`
-- Giao diện web sống tại: `http://localhost:8501`
+- Backend sống tại: `http://localhost:xxxx/health`
+- Giao diện web sống tại: `http://localhost:xxxx`
 
 Nếu gặp lỗi, kiểm tra các nguồn sau:
 
