@@ -235,7 +235,7 @@ pip install -r requirements.txt
 Start backend:
 
 ```bash
-uvicorn src.backend.app:app --host 0.0.0.0 --port 8000
+uvicorn src.backend.app:app --host x.x.x.x --port xxxx
 ```
 
 Start frontend:
@@ -247,7 +247,7 @@ streamlit run src/frontend/streamlit_app.py
 Open:
 
 ```text
-http://localhost:8501
+http://localhost:xxxx
 ```
 
 ---
